@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <header><h1>Contactame</h1>
+    <header> <h1>Juan Fontalba Diaz.Materiales y Sistemas de Construcción</h1>
         <nav>
         <ul>
             <li><a href="/index.html">Inicio </a></li>
             <li><a href="/pages/catalogo.html">Catálogo </a></li>
-            <li><a href="/pages/productos.html">Materiales </a></li>
+            <li><a href="/pages/productos.html">Productos</a></li>
             <li><a href="/pages/contacto.html">Contacto </a></li>
         </ul>
     </nav>
+    <h3>Contáctame</h3>
         <p> Cada proyecto tiene una singularidad e importancia específica.
             Dadas las características de su obra, le ofrecezco un trato especializado y soluciones a medida que garantizan la excelencia.<br>
             Rellene los campos a continuación y me pondré en contacto con usted a la mayor brevedad posible para colaborar y llevar su proyecto al siguiente nivel</p>
     </header>
     <form action="https://www.juanfontalba.es" method="post">
-        <label>Nombre Completo</label>
-        <input type="text" maxlength="35" name="nombreCompleto" required>
-        <label>Email</label>
-        <input type="email" name="email" required>
-        <label>Teléfono</label>
-        <input type="tel" name="telefono" maxlength="9" required><br>
+        <div class="filas-form"><label>Nombre Completo</label>
+        <input type="text" maxlength="35" name="nombreCompleto" required></div>
+        <div class="filas-form"><label>Email</label>
+        <input type="email" name="email" required></div>
+        <div class="filas-form"><label>Teléfono</label>
+        <input type="tel" name="telefono" maxlength="9" required><br></div>
         <input type="submit" value="Enviar">
 
     </form>
