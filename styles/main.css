@@ -4,52 +4,46 @@ body {
     font-family: Arial, sans-serif; /* Una fuente más limpia y moderna que la de por defecto */
     margin: 0; /* Quita el margen por defecto del navegador */
     color: #333; /* Un color de texto gris oscuro, más suave que el negro puro */
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 img {
     max-width: 100%; /* La regla de oro: las imágenes nunca se saldrán de su caja */
     height: auto; /* IMPORTANTE: mantiene la proporción alto/ancho de la imagen */
+    
 }
 
 /* --- ENCABEZADO Y LOGO --- */
 header {
-    background-color: #ffffff; /* Fondo blanco para el encabezado */
-    padding: 20px; /* Relleno interior para que el contenido no se pegue a los bordes */
-    text-align: center; /* Centra todo el texto (tu H1) dentro del header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Una sombra sutil para "levantar" el header */
+    background-color: #ffffff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px; /* Una altura mínima */
+    padding: 10px 20px; /* Relleno simple */
+}
+.cabecera {
+    display: flex;
+    align-items: center; /* ¡Centra verticalmente el logo y el h1! */
+    gap: 15px; /* Espacio entre el logo y el h1 */
+    
+    /* Centra el contenido si el header es más ancho */
+    max-width: 1200px; /* Opcional: un ancho máximo para el contenido */
+    margin: 0 auto; /* Opcional: centra el .header-content */
 }
 
-.imagen-container {
-    max-width: 400px; /* Fija un ancho MÁXIMO para la caja de la imagen */
-    margin: 15px auto; /* Centra la caja: 15px arriba/abajo, 'auto' a izq/der */
+.cabecera h1 {
+    margin: 0;
+    font-size: 1.6em;
+    padding-right: 35px;
 }
 
-/* --- MENÚ DE NAVEGACIÓN --- */
-nav {
-    background-color: #333; /* Fondo oscuro para la barra de navegación */
-}
-
-nav ul {
-    list-style-type: none; /* 1. Quita los puntos (viñetas) de la lista */
-    padding: 0; /* 2. Quita el relleno por defecto de la lista */
-    margin: 0; /* 3. Quita el margen por defecto de la lista */
-    display: flex; /* 4. ¡LA MAGIA! Pone los <li> (los items) en una fila horizontal */
-    justify-content: center; /* 5. Centra esa fila de items en la barra de navegación */
-}
-
-nav li {
-    margin: 0 15px; /* Crea un espacio de 15px a los lados de CADA item del menú */
-}
-
-nav a {
-    color: white; /* Color del texto de los enlaces */
-    text-decoration: none; /* Quita el subrayado por defecto de los enlaces */
-    font-weight: bold; /* Pone el texto en negrita */
-    padding: 15px 0; /* Relleno arriba/abajo para que el link ocupe más altura */
-    display: block; /* Hace que el enlace ocupe todo el espacio del <li> */
-}
+#fotohead{
+    width: 300px; /* Fija un ancho MÁXIMO para la caja de la imagen */
+    border-radius: 10px;
+    height: auto;
+} 
 
 /* --- CONTENIDO PRINCIPAL --- */
 section {
@@ -68,14 +62,3 @@ footer {
     margin-top: 20px; /* Un espacio para separarlo del contenido de arriba */
 }
 
-/*Catalogo*/
-table {padding: 30px;
-        border-collapse: collapse;
-        width: 100%;}
-th, td {padding: 12px 15px;
-    text-align: left;}
-
-th {background-color: #333;
-        color: blanchedalmond;}
-
-tr {border-bottom: 1px solid #ddd;}
