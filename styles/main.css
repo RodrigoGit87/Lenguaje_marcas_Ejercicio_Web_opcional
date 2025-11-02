@@ -1,64 +1,66 @@
-/* --- ESTILOS GLOBALES --- */
+
 body {
-    background-color: #f4f4f4; /* Un gris muy claro, más suave que 'lightgray' */
-    font-family: Arial, sans-serif; /* Una fuente más limpia y moderna que la de por defecto */
-    margin: 0; /* Quita el margen por defecto del navegador */
-    color: #333; /* Un color de texto gris oscuro, más suave que el negro puro */
+    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    color: #333;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 img {
-    max-width: 100%; /* La regla de oro: las imágenes nunca se saldrán de su caja */
-    height: auto; /* IMPORTANTE: mantiene la proporción alto/ancho de la imagen */
+    max-width: 100%; /* las imágenes no saldrán de su caja */
+    height: auto; /* mantiene la proporción alto/ancho de la imagen */
     
 }
 
-/* --- ENCABEZADO Y LOGO --- */
+
 header {
     background-color: #ffffff; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     box-sizing: border-box;
     width: 100%;
-    min-height: 50px; /* Una altura mínima */
-    padding: 10px 20px; /* Relleno simple */
+    min-height: 50px; 
+    padding: 20px 25px;
 }
+
+footer {
+    text-align: center;
+    padding: 20px; 
+    background-color: #333; 
+    color: white; 
+    margin-top: 20px;
+    font-size: 24px;
+}
+
 .cabecera {
-    display: flex;
-    align-items: center; /* ¡Centra verticalmente el logo y el h1! */
-    gap: 15px; /* Espacio entre el logo y el h1 */
-    
-    /* Centra el contenido si el header es más ancho */
-    max-width: 1200px; /* Opcional: un ancho máximo para el contenido */
-    margin: 0 auto; /* Opcional: centra el .header-content */
+    display: box;
+    margin-block-end: 3px;
 }
 
 .cabecera h1 {
     margin: 0;
-    font-size: 1.6em;
-    padding-right: 35px;
+    font-size: 1.9em;
+    text-align: center;
 }
 
 #fotohead{
-    width: 300px; /* Fija un ancho MÁXIMO para la caja de la imagen */
-    border-radius: 10px;
-    height: auto;
+    width: 363px;
+    max-height: 364px;
 } 
 
-/* --- CONTENIDO PRINCIPAL --- */
-section {
-    background-color: #ffffff; /* Fondo blanco también para el contenido */
-    max-width: 800px; /* Limita el ancho del texto para que sea fácil de leer */
-    margin: 20px auto; /* Centra el bloque de sección y le da aire (20px) arriba/abajo */
-    padding: 20px; /* Relleno interior */
+.textos_seccion{
+    padding-left: 10px;
+    font-size: 35px;
+    letter-spacing: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
 }
 
-/* --- PIE DE PÁGINA --- */
-footer {
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Relleno interior */
-    background-color: #333; /* Mismo color que el nav para coherencia */
-    color: white; /* Texto blanco */
-    margin-top: 20px; /* Un espacio para separarlo del contenido de arriba */
+.texto_detalles{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    padding-left: 10px;
+    letter-spacing: normal;
+    color: rgb(26, 24, 24);
 }
-
